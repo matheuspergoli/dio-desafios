@@ -20,3 +20,10 @@ export interface DataPokemon {
 		}
 	}
 }
+
+export interface TypePokemon {
+	slot: number
+	type: {
+		name: string
+	}
+}
