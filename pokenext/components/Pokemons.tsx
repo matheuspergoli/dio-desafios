@@ -26,6 +26,9 @@ function Pokemons() {
 
 	return (
 		<>
+			<header className='flex justify-center mb-10'>
+				<img src="/pokemon-logo.png" alt="Pokemon Logo" />
+			</header>
 			<div className='flex items-center justify-center gap-5 flex-wrap mx-auto max-w-6xl'>
 				{data &&
 					data.results.map((result, index) => (
