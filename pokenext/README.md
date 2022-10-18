@@ -1,4 +1,4 @@
-# Pokenext
+# Pokénext
 
 ## (Em andamento)
 
