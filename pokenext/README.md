@@ -15,3 +15,4 @@ Mas como estou aprendendo NextJS & ReactJS, eu decidi seguir com essas duas tecn
 - ReactJS
 - Typescript
 - TailwindCSS
+- React Query
