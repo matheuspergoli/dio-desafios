@@ -26,7 +26,7 @@ function Pokemons() {
 
 	return (
 		<>
-			<div className='flex items-center justify-center gap-5 flex-wrap mx-auto max-w-5xl'>
+			<div className='flex items-center justify-center gap-5 flex-wrap mx-auto max-w-6xl'>
 				{data &&
 					data.results.map((result, index) => (
 						<CardPokemon
