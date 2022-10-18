@@ -1,7 +1,5 @@
 # Pokénext
 
-## (Em andamento)
-
 Projeto criado para o Bootcamp **DIO - Orange Tech +**
 
 Desafio de projeto - Construindo uma Pokédex com Javascript.
