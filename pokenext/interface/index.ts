@@ -11,6 +11,11 @@ export interface DataPokemon {
 	height: number
 	weight: number
 	types: { slot: number; type: { name: string } }[]
+	abilities: {
+		ability: {
+			name: string
+		}
+	}[]
 	sprites: {
 		front_default: string
 		other: {
@@ -24,6 +29,12 @@ export interface DataPokemon {
 export interface TypePokemon {
 	slot: number
 	type: {
+		name: string
+	}
+}
+
+export interface AbilityPokemon {
+	ability: {
 		name: string
 	}
 }
