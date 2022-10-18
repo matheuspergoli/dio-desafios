@@ -10,7 +10,7 @@ export interface DataPokemon {
 	name: string
 	height: number
 	weight: number
-	types: { type: string }[]
+	types: { slot: number; type: { name: string } }[]
 	sprites: {
 		front_default: string
 		other: {
