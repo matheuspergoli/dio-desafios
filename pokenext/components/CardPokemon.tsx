@@ -16,20 +16,20 @@ function CardPokemon(props: { url: string; index: number }) {
 	return (
 		<>
 			{data && (
-				<section className='flex flex-col items-center justify-center border w-60 h-60'>
+				<section className='flex flex-col items-center justify-center rounded-md border-2 border-green-500 w-60 h-60'>
 					<figure>
 						<img
 							src={data.sprites.front_default}
 							alt={data.name}
 						/>
 					</figure>
-					<h1>
-						#{data.id} <span className='capitalize'>{data.name}</span>
+					<h1 className='mb-5'>
+						<span className='capitalize'>{data.name}</span>
 					</h1>
-					<ul>
+					<ul className='flex gap-2'>
 						{data.types.map((type) => (
 							<li
-								className='capitalize text-center'
+								className='capitalize text-center rounded-lg border py-1 px-5'
 								key={type.slot}>
 								{type.type.name}
 							</li>
