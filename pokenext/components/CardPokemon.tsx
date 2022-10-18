@@ -16,11 +16,12 @@ function CardPokemon(props: { url: string; index: number }) {
 	return (
 		<>
 			{data && (
-				<section className='flex flex-col items-center justify-center rounded-md border-2 w-64 h-64 border-blue-500'>
+				<section className='flex flex-col items-center justify-center rounded-md w-64 h-80 bg-white'>
 					<span className='pl-5 self-start font-bold'>#{data.id}</span>
 					<figure>
 						<img
-							src={data.sprites.front_default}
+							className='w-40 h-40'
+							src={data.sprites.other['official-artwork'].front_default}
 							alt={data.name}
 						/>
 					</figure>
