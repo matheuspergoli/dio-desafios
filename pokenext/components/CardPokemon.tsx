@@ -1,15 +1,17 @@
 import React from 'react'
-import { useQuery } from 'react-query'
 import { DataPokemon } from '../interface'
 
 function CardPokemon(props: { url: string; index: number }) {
-	const { data } = useQuery(['pokemon', props.index], fetchPokemons)
+	const [data, setData] = React.useState(null)
 
-	async function fetchPokemons() {
-		const response = await fetch(props.url)
-		const json = await response.json()
-		return json as DataPokemon
-	}
+	React.useEffect(() => {
+		async function fetchPokemon() {
+			const response = await fetch(props.url)
+			const json = await response.json()
+			setData(json as DataPokemon)
+		}
+		fetchPokemon()
+	})
 
 	return (
 		<>
