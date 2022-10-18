@@ -2,13 +2,13 @@ import React from 'react'
 import { DataPokemon, TypePokemon } from '../interface'
 
 function CardPokemon(props: { url: string; index: number }) {
-	const [data, setData] = React.useState(null)
+	const [data, setData] = React.useState<DataPokemon>(null)
 
 	React.useEffect(() => {
 		async function fetchPokemon() {
 			const response = await fetch(props.url)
 			const json = await response.json()
-			setData(json as DataPokemon)
+			setData(json)
 		}
 		fetchPokemon()
 	})
@@ -16,8 +16,8 @@ function CardPokemon(props: { url: string; index: number }) {
 	return (
 		<>
 			{data && (
-				<section className='flex flex-col items-center justify-center rounded-md border-2 border-green-500 w-60 h-60'>
-					<span></span>
+				<section className='flex flex-col items-center justify-center rounded-md border-2 border-green-500 w-64 h-64'>
+					<span className='pl-5 self-start font-bold'>#{data.id}</span>
 					<figure>
 						<img
 							src={data.sprites.front_default}
