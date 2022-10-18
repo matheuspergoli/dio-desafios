@@ -4,10 +4,10 @@
 
 Projeto criado para o Bootcamp **DIO - Orange Tech +**
 
-Desafio de projeto - Construindo uma Pokédex com Javascript
+Desafio de projeto - Construindo uma Pokédex com Javascript.
 
-O desafio proposto é a criação de uma Pokédex com Javascript
-Mas como estou aprendendo NextJS & ReactJS, eu decidi seguir com essas duas tecnologias
+O desafio proposto é a criação de uma Pokédex com HTML, CSS & JS.  
+Mas como estou aprendendo NextJS & ReactJS, eu decidi seguir com essas duas tecnologias.
 
 ### Tecnologias que estou utilizando:
 
