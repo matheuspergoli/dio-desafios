@@ -1,3 +1,3 @@
-## DIO - Desafios
+# DIO - Desafios
 
-Repositório base para os desafios do Bootcamp **DIO - Orange Tech +**
+Repositório base para os desafios e projetos do Bootcamp **DIO - Orange Tech +**
