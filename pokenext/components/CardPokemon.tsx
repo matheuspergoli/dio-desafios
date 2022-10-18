@@ -22,7 +22,7 @@ function CardPokemon(props: { url: string; index: number }) {
 			setData(json)
 		}
 		fetchPokemon()
-	})
+	}, [props.url])
 
 	function closeModal() {
 		setOpen(false)
