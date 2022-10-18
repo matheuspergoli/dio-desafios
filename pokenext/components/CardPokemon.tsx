@@ -1,5 +1,5 @@
 import React from 'react'
-import { DataPokemon } from '../interface'
+import { DataPokemon, TypePokemon } from '../interface'
 
 function CardPokemon(props: { url: string; index: number }) {
 	const [data, setData] = React.useState(null)
@@ -17,6 +17,7 @@ function CardPokemon(props: { url: string; index: number }) {
 		<>
 			{data && (
 				<section className='flex flex-col items-center justify-center rounded-md border-2 border-green-500 w-60 h-60'>
+					<span></span>
 					<figure>
 						<img
 							src={data.sprites.front_default}
@@ -27,7 +28,7 @@ function CardPokemon(props: { url: string; index: number }) {
 						<span className='capitalize'>{data.name}</span>
 					</h1>
 					<ul className='flex gap-2'>
-						{data.types.map((type) => (
+						{data.types.map((type: TypePokemon) => (
 							<li
 								className='capitalize text-center rounded-lg border py-1 px-5'
 								key={type.slot}>
