@@ -1,6 +1,6 @@
 import React from 'react'
 import { Modal } from '@mui/material'
-import { DataPokemon, TypePokemon } from '../interface'
+import { DataPokemon, TypePokemon, AbilityPokemon } from '../interface'
 
 const styleModal = {
 	display: 'flex',
@@ -73,15 +73,30 @@ function CardPokemon(props: { url: string; index: number }) {
 								<h1 className='text-center mb-5'>
 									<span className='capitalize text-2xl'>{data.name}</span>
 								</h1>
-								<ul className='flex justify-center gap-2'>
-									{data.types.map((type: TypePokemon) => (
-										<li
-											className='capitalize text-center rounded-lg border py-1 px-5 bg-red-600 text-white'
-											key={type.slot}>
-											{type.type.name}
-										</li>
-									))}
-								</ul>
+								<div className='border-2 rounded-md mb-5 p-2'>
+									<p className='font-semibold text-center'>Type</p>
+									<ul className='flex items-center justify-center gap-2'>
+										{data.types.map((type: TypePokemon) => (
+											<li
+												className='capitalize text-center rounded-lg border py-1 px-5 bg-red-600 text-white'
+												key={type.slot}>
+												{type.type.name}
+											</li>
+										))}
+									</ul>
+								</div>
+								<div className='border-2 rounded-md p-2'>
+									<p className='font-semibold text-center'>Abilities</p>
+									<ul className='flex items-center justify-center gap-2'>
+										{data.abilities.map((ability: AbilityPokemon) => (
+											<li
+												className='capitalize text-center rounded-lg border py-1 px-5 bg-red-600 text-white'
+												key={ability.ability.name}>
+												{ability.ability.name}
+											</li>
+										))}
+									</ul>
+								</div>
 							</div>
 						</section>
 					</Modal>
