@@ -1,7 +1,9 @@
+import Pokemons from '../components/Pokemons'
+
 function Home() {
 	return (
-		<main>
-			<h1>NextJS App</h1>
+		<main className='p-5'>
+			<Pokemons />
 		</main>
 	)
 }
