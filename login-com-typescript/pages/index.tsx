@@ -6,7 +6,7 @@ function Home() {
 			<Head>
 				<title>Login</title>
 			</Head>
-			<main>
+			<main className='flex items-center justify-center h-screen w-screen bg-purple-600'>
 				<h1>NextJS App</h1>
 			</main>
 		</>
