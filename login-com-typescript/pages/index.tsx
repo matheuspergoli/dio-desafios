@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Formulario from '../components/Form'
 
 function Home() {
 	return (
@@ -6,8 +7,8 @@ function Home() {
 			<Head>
 				<title>Login</title>
 			</Head>
-			<main className='flex items-center justify-center h-screen w-screen bg-purple-600'>
-				<h1>NextJS App</h1>
+			<main className='flex items-center justify-center h-screen w-screen bg-purple-700'>
+				<Formulario />
 			</main>
 		</>
 	)
