@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Formik, Form, Field } from 'formik'
 import UserSchemaValidation from '../../validation/UserSchemaValidation'
 import { signIn } from 'next-auth/react'
+import { IconeEmail, IconePassword, IconeUser } from '../../icons'
 
 const Formulario = () => {
 	return (
@@ -22,44 +23,47 @@ const Formulario = () => {
 					initialValues={{ email: '', password: '', nome: '' }}>
 					{({ errors, touched }) => (
 						<Form className='flex flex-col gap-2 w-full p-5 mx-auto sm:mx-0 sm:p-0 sm:w-60'>
-							<div>
+							<div className='flex gap-1 border-b pb-1 px-1'>
+								<figure className='text-pink-700'>{IconeUser()}</figure>
 								<Field
 									id='nome'
 									name='nome'
 									type='text'
 									placeholder='Nome completo'
-									className='pb-1 px-1 w-full border-b outline-none bg-transparent text-white'
+									className='w-full outline-none bg-transparent text-white'
 								/>
-								{errors.nome && touched.nome && (
-									<p className='px-1 text-red-500'>{errors.nome}</p>
-								)}
 							</div>
+							{errors.nome && touched.nome && (
+								<p className='px-1 text-red-500'>{errors.nome}</p>
+							)}
 
-							<div>
+							<div className='flex gap-1 border-b pb-1 px-1'>
+								<figure className='text-pink-700'>{IconeEmail()}</figure>
 								<Field
 									id='email'
 									name='email'
 									type='email'
 									placeholder='E-mail'
-									className='pb-1 px-1 w-full border-b outline-none bg-transparent text-white'
+									className='w-full outline-none bg-transparent text-white'
 								/>
-								{errors.email && touched.email && (
-									<p className='px-1 text-red-500'>{errors.email}</p>
-								)}
 							</div>
+							{errors.email && touched.email && (
+								<p className='px-1 text-red-500'>{errors.email}</p>
+							)}
 
-							<div>
+							<div className='flex gap-1 border-b pb-1 px-1'>
+								<figure className='text-pink-700'>{IconePassword()}</figure>
 								<Field
 									id='password'
 									name='password'
 									type='password'
 									placeholder='Password'
-									className='pb-1 px-1 w-full border-b outline-none bg-transparent text-white'
+									className='w-full outline-none bg-transparent text-white'
 								/>
-								{errors.password && touched.password && (
-									<p className='px-1 text-red-500'>{errors.password}</p>
-								)}
 							</div>
+							{errors.password && touched.password && (
+								<p className='px-1 text-red-500'>{errors.password}</p>
+							)}
 
 							<button
 								type='submit'
@@ -75,7 +79,11 @@ const Formulario = () => {
 				</p>
 				<div className='flex gap-1 mt-5 justify-center sm:justify-start text-white'>
 					<p>Entre com</p>
-					<button onClick={() => signIn('github')} className='font-bold text-green-500'>Github</button>
+					<button
+						onClick={() => signIn('github')}
+						className='font-bold text-green-500'>
+						Github
+					</button>
 				</div>
 			</div>
 		</>
