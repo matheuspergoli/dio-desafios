@@ -11,3 +11,5 @@ Desafio de projeto - Construindo uma tela de cadastro da plataforma DIO
 - ReactJS
 - Typescript
 - TailwindCSS
+- Formik
+- Yup
