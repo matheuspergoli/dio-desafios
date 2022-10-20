@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Formik, Form, Field } from 'formik'
 import UserSchemaValidation from '../../validation/UserSchemaValidation'
+import { signIn } from 'next-auth/react'
 
 const Formulario = () => {
 	return (
@@ -74,7 +75,7 @@ const Formulario = () => {
 				</p>
 				<div className='flex gap-1 mt-5 justify-center sm:justify-start text-white'>
 					<p>Entre com</p>
-					<button className='font-bold text-green-500'>Github</button>
+					<button onClick={() => signIn('github')} className='font-bold text-green-500'>Github</button>
 				</div>
 			</div>
 		</>
