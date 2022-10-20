@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Menu = () => {
@@ -10,10 +11,15 @@ const Menu = () => {
 	return (
 		<header className='flex items-center justify-between px-14 py-3 relative bg-black'>
 			<figure>
-				<img
-					src='/logo-dio.png'
-					alt='Logo Dio'
-				/>
+				<Link
+					href='/'
+					passHref>
+					<img
+						className='cursor-pointer'
+						src='/logo-dio.png'
+						alt='Logo Dio'
+					/>
+				</Link>
 			</figure>
 			<nav className='text-white'>
 				<div className='hidden gap-5 sm:flex'>
@@ -33,7 +39,10 @@ const Menu = () => {
 						className='px-5 rounded-full transition bg-gray-600 hover:bg-gray-900'>
 						Menu
 					</button>
-					<div className={`${openMenu ? 'flex' : 'hidden'} flex-col gap-5 p-5 rounded-md absolute right-5 top-16 bg-black`}>
+					<div
+						className={`${
+							openMenu ? 'flex' : 'hidden'
+						} flex-col gap-5 p-5 rounded-md absolute right-5 top-16 bg-black`}>
 						<button className='px-5 rounded-full transition bg-gray-600 hover:bg-gray-900'>
 							Entrar
 						</button>
