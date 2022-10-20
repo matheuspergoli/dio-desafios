@@ -14,4 +14,4 @@ Desafio de projeto - Construindo uma tela de cadastro da plataforma DIO
 - Formik
 - Yup
 
-[Site online - Pokenext](https://dio-cadastro.vercel.app)
+[Site online - DIO - Cadastro](https://dio-cadastro.vercel.app)
