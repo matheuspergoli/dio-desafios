@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Menu from '../components/Menu'
 
 function Home() {
@@ -23,9 +24,13 @@ function Home() {
 							mundo e encare seu novo desafio profissional, evoluindo em
 							comunidade com os melhores experts.
 						</p>
-						<button className='mt-5 px-10 py-1 rounded-full transition text-white bg-pink-700 hover:bg-pink-900'>
-							Começar agora
-						</button>
+						<Link
+							href='/cadastro'
+							passHref>
+							<button className='mt-5 px-10 py-1 rounded-full transition text-white bg-pink-700 hover:bg-pink-900'>
+								Começar agora
+							</button>
+						</Link>
 					</div>
 					<figure className='hidden md:block'>
 						<img
