@@ -24,7 +24,7 @@ const Formulario = () => {
 					{({ errors, touched }) => (
 						<Form className='flex flex-col gap-2 w-full p-5 mx-auto sm:mx-0 sm:p-0 sm:w-60'>
 							<div className='flex gap-1 border-b pb-1 px-1'>
-								<figure className='text-pink-700'>{IconeUser()}</figure>
+								<figure className='w-6 h-6 text-pink-700'>{IconeUser}</figure>
 								<Field
 									id='nome'
 									name='nome'
@@ -38,7 +38,7 @@ const Formulario = () => {
 							)}
 
 							<div className='flex gap-1 border-b pb-1 px-1'>
-								<figure className='text-pink-700'>{IconeEmail()}</figure>
+								<figure className='w-6 h-6 text-pink-700'>{IconeEmail}</figure>
 								<Field
 									id='email'
 									name='email'
@@ -52,7 +52,9 @@ const Formulario = () => {
 							)}
 
 							<div className='flex gap-1 border-b pb-1 px-1'>
-								<figure className='text-pink-700'>{IconePassword()}</figure>
+								<figure className='w-6 h-6 text-pink-700'>
+									{IconePassword}
+								</figure>
 								<Field
 									id='password'
 									name='password'

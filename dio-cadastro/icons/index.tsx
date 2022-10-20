@@ -1,11 +1,11 @@
-export const IconeUser = (tamanho = 6) => (
+export const IconeUser = (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		fill='none'
 		viewBox='0 0 24 24'
 		strokeWidth={1.5}
 		stroke='currentColor'
-		className={`w-${tamanho} h-${tamanho}`}>
+		className='w-6 h-6'>
 		<path
 			strokeLinecap='round'
 			strokeLinejoin='round'
@@ -14,14 +14,14 @@ export const IconeUser = (tamanho = 6) => (
 	</svg>
 )
 
-export const IconeEmail = (tamanho = 6) => (
+export const IconeEmail = (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		fill='none'
 		viewBox='0 0 24 24'
 		strokeWidth={1.5}
 		stroke='currentColor'
-		className={`w-${tamanho} h-${tamanho}`}>
+		className='w-6 h-6'>
 		<path
 			strokeLinecap='round'
 			strokeLinejoin='round'
@@ -30,14 +30,14 @@ export const IconeEmail = (tamanho = 6) => (
 	</svg>
 )
 
-export const IconePassword = (tamanho = 6) => (
+export const IconePassword = (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		fill='none'
 		viewBox='0 0 24 24'
 		strokeWidth={1.5}
 		stroke='currentColor'
-		className={`w-${tamanho} h-${tamanho}`}>
+		className='w-6 h-6'>
 		<path
 			strokeLinecap='round'
 			strokeLinejoin='round'
